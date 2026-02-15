@@ -13,6 +13,10 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
+app.get("/", (req, res) => {
+    res.json({ status: "Voice Agent AI backend running ✅" });
+});
+
 app.post("/api/transform", async (req, res) => {
     try {
         const { text, type } = req.body;
