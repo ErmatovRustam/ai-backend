@@ -1,0 +1,15 @@
+cat > .gitignore << 'EOF'
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcuserdata
+*.xcworkspace
+*.xcuserstate
+
+# Node
+node_modules/
+.env
+EOF
